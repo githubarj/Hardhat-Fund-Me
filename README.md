@@ -1,4 +1,4 @@
-# Web 3 Crwod Funding Application
+# Web 3 Crowd Funding Application
 This is an application that allows a user to receive funds from multiple people and only the user/deployer can later withdraw. There is also a minumum one can send. This allows a user to receive funding.
 
 # Getting Started
