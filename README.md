@@ -19,16 +19,8 @@ This is an application that allows a user to receive funds from multiple people 
 
 ```
 git clone https://github.com/githubarj/Web-3-CrowdFunding-App.git
-cd hardhat-fund-me-fcc
+cd Web-3-CrowdFunding-App
 yarn
-```
-
-## Typescript
-
-For the typescript edition, run:
-
-```
-git checkout typescript
 ```
 
 # Usage
