@@ -1,6 +1,6 @@
-const { run } = require("hardhat")
+const { run } = require("hardhat");
 
-const verify = async (contractAddress, args) =>{
+const verify = async (contractAddress, args) => {
     console.log("Verifying contract...");
 
     //since our code may already be verified which may cause an error , we use a try catch
@@ -17,6 +17,6 @@ const verify = async (contractAddress, args) =>{
             console.log(e);
         }
     }
-}
+};
 
-module.exports = {verify}
+module.exports = { verify };

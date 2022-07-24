@@ -8,7 +8,7 @@ require("hardhat-deploy");
 const RINKEBY_RPC_URL = process.env.RINKEBY_RPC_URL;
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
 const COINMARKETCAP_API_KEY = process.env.COINMARKETCAP_API_KEY;
-const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY
+const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY;
 
 module.exports = {
     //adding multiple versions of solodity compiler
@@ -22,6 +22,8 @@ module.exports = {
             accounts: [PRIVATE_KEY],
             chainId: 4,
             blockConfirmations: 6,
+            gas: 2100000,
+            gasPrice: 8000000000,
         },
     },
     gasReporter: {

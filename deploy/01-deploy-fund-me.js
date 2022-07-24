@@ -21,7 +21,7 @@ const {
     developmentChains,
 } = require("../helper-hardhat-config"); //easy way to pull just networkconfig from the helper file
 const { network } = require("hardhat");
-const { verify } = require("../utils/verify")
+const { verify } = require("../utils/verify");
 
 module.exports = async ({ getNamedAccounts, deployments }) => {
     const { deploy, log } = deployments; //pulling these two functions out of deployment
@@ -53,12 +53,15 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
     });
 
     //verification,checking if on a testnet
-    if(!developmentChains.includes(network.name) && process.env.ETHERSCAN_API_KEY){
-          //VERIFY
-          await verify(fundMe.address, args);
+    if (
+        !developmentChains.includes(network.name) &&
+        process.env.ETHERSCAN_API_KEY
+    ) {
+        //VERIFY
+        await verify(fundMe.address, args);
     }
 
     log("----------------------------------------------");
 };
 
-module.exports.tags = ["all", "fundme"]
+module.exports.tags = ["all", "fundme"];
